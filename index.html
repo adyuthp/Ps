@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Portfolio">
 		<meta name="keywords" content="Creative, minimal, Portfolio, cv, business, Resume, Information, personal portfolio, Professional">
-		<meta name="author" content="kamleshyadav">
+		<meta name="author" content="Adyuth">
 		<meta name="MobileOptimized" content="320">
 		<!--Start Style -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -20,7 +20,19 @@
 		<link rel="stylesheet" href="assets/css/scrollbar.css">
 		<!-- Favicon Link -->
 		<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
-		
+		<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5f1ffb7b4eb6fc4a189b0103/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
 		<title>Adyuth</title>
 	</head>
 	<body>
@@ -273,8 +285,8 @@
 											<span class="first_text">Download CV</span>
 											<span class="second_text">Download</span>
 										</a>
-										<a href="javascript:;" class="portfolio_btn btn_red">
-											<span class="first_text">Contact Me</span>
+										<a href="javascript:;" class="portfolio_btn btn_red"  id="redirect_contact">
+											<span class="first_text" >Contact Me</span>
 											<span class="second_text">Send Message</span>
 										</a>
 									</div>
@@ -301,7 +313,7 @@
 							<div class="col-xl-5 col-lg-12 col-md-12">
 								<div class="about_leftsection ">
 									<div class="img_warapper">
-										<img class="img-fluid" src="assets/images/adyu-banner.jpg" alt="About" title="more information click + icon">
+										<img class="img-fluid" src="assets/images/adyu-banner.jpg" alt="About" >
 										<div class="icon" title="more information click + icon">
 											<div class="iconbox">
 												<i class="fa fa-plus icon_plus" aria-hidden="true"></i>
@@ -310,9 +322,11 @@
 										</div>
 									</div>
 									<div class="left_deatils">
+										
 										<div class="personal_details">
 											<h1 class="ps_name">Adyuth</h1>
 											<p class="ps_designation">UI Developer</p>
+											
 											<ul class="info-list">
 											  <!-- <li><span class="title">Age</span><span class="value">28</span></li> -->
 											  
@@ -345,7 +359,7 @@
 										</div>
 									</div>
 									<h2 class="about_tophead">Hi there...</h2>
-									<p class="about_deatils">I'm a UI/UX Designer & Front-End Developer focused on crafting beautiful web & mobile user experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2019. I enjoy creating beautifully designed, intuitive and functional websites. I have also experience in Graphic Designing & Visual Effects.</p>
+									<p class="about_deatils">I'm a UI/UX Designer & Front-End Developer focused on crafting beautiful web & mobile user experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2019. I enjoy creating beautifully designed, intuitive and functional websites.</p>
 									<p></p>
 									<div class="signature_box">
 										<div class="name">
@@ -1837,28 +1851,28 @@
 									</div>
 									<div class="col-12">
 										<div class="port_contact_form">
-											<form>
+											<form action="https://formspree.io/xjvajdrk" method="POST">
 												<div class="row">
 													<div class="col-sm-6">
 														  <div class="form-group">
-															<input type="text" name="first_name" class="form-control require" id="name" placeholder="First name">
+															<input type="text" name="name" class="form-control require" id="name" placeholder="First name">
 														  </div>
 													</div>
-													<div class="col-sm-6">
+													<!-- <div class="col-sm-6">
 														  <div class="form-group">
 															<input type="text" name="last_name" class="form-control require" id="last-name" placeholder="Last name" >
 														  </div>
-													</div>
+													</div> -->
 													<div class="col-sm-6">
 														  <div class="form-group">
-															<input type="email" name="email" class="form-control require" id="email" placeholder="Email Address" data-valid="email" data-error="Email should be valid.">
+															<input type="email" name="_replyto" class="form-control require" id="email" placeholder="Email Address" data-valid="email" data-error="Email should be valid.">
 														  </div>
 													</div>
-													<div class="col-sm-6">
+													<!-- <div class="col-sm-6">
 														  <div class="form-group">
 															<input type="text" name="subject" class="form-control require" id="subject" placeholder="Subject">
 														  </div>
-													</div>
+													</div> -->
 													<div class="col-12">
 														  <div class="form-group">
 															<textarea  name="message" class="form-control require" rows="3" id="comment" placeholder="Message"></textarea>
@@ -1866,7 +1880,7 @@
 													</div>
 													<div class="col-12">
 														<div class="banner_btn">
-															<button type="button" data-type="contact" class="portfolio_btn btn_red submitForm">
+															<button type="submit" value="send" data-type="contact" class="portfolio_btn btn_red submitForm">
 																<span class="first_text">Submit</span>
 																<span class="second_text">Send</span>
 															</button>
